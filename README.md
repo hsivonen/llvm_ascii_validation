@@ -93,7 +93,9 @@ Bridge).
 
 ## Performance results
 
-### x86_64 code running on Intel(R) Xeon(R) CPU E5-2637 v4 @ 3.50GHz (similar results with both the `powersave` and `performance` governors).
+### x86_64 code running on Intel(R) Xeon(R) CPU E5-2637 v4 @ 3.50GHz
+
+Similar results with both the `powersave` and `performance` governors.
 
 ```
 $ rustup default 1.24.0
