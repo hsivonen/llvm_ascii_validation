@@ -1,0 +1,6 @@
+[package]
+name = "llvm_ascii_validation"
+version = "0.1.0"
+authors = ["Henri Sivonen <hsivonen@hsivonen.fi>"]
+
+[dependencies]
