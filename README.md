@@ -110,3 +110,20 @@ $ ./bench.sh
 [...]
 test bench ... bench:   1,865,801 ns/iter (+/- 22,297)
 ```
+
+### x86_64 code running on Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz (Haswell-DT)
+
+```
+$ rustup default 1.24.0
+$ ./bench.sh
+[...]
+test bench ... bench:   1,491,560 ns/iter (+/- 65,163)
+```
+
+```
+$ rustup default 1.25.0
+$ ./bench.sh
+[...]
+test bench ... bench:   1,673,239 ns/iter (+/- 15,355)
+```
+
