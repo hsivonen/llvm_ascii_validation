@@ -90,3 +90,21 @@ the looping continues. Yet, on the EC2 instances that Mozilla uses for
 Firefox CI the new form caused an up to 12.5% performance regression. I've
 been told the instance types are c4.2xlarge and c3.xlarge (Haswell and Ivy
 Bridge).
+
+## Performance results
+
+### x86_64 code running on Intel(R) Xeon(R) CPU E5-2637 v4 @ 3.50GHz (similar results with both the `powersave` and `performance` governors).
+
+```
+$ rustup default 1.24.0
+$ ./bench.sh
+[...]
+test bench ... bench:   1,539,341 ns/iter (+/- 216,985)
+```
+
+```
+$ rustup default 1.25.0
+$ ./bench.sh
+[...]
+test bench ... bench:   1,865,801 ns/iter (+/- 22,297)
+```
